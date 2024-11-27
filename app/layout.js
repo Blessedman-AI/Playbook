@@ -17,7 +17,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: 'Athena Playbook Library',
+  title: 'Playbook Library',
 };
 
 export default function RootLayout({ children }) {
