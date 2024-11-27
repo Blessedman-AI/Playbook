@@ -5,7 +5,7 @@ import { foundationsCards, featuredCards } from '@/helper/DummyData';
 
 export default function Home() {
   return (
-    <div className="mt-7">
+    <div className="">
       <CatLinks />
       <CatCards
         categoryTitle={'Featured'}

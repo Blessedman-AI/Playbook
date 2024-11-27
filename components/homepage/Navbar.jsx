@@ -88,7 +88,7 @@ const Navbar = () => {
   return (
     <nav
       className="w-full bg-gradient-to-br from-[#1e1e33]
-     to-[#030311] text-white py-8 lg:py-[4.5rem] px-8 lg:px-[64px]"
+     to-[#030311] text-white py-8 lg:py-[4.5rem] px-6 lg:px-[64px]"
     >
       <div
         className="flex flex-col lg:flex-row items-start lg:items-center 

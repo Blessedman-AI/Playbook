@@ -8,15 +8,16 @@ export const Card = ({ title, tag }) => {
   return (
     <div
       className="bg-gradient-to-br from-[#1e1e33] to-[#030311]
-           rounded-md w-[300px] lg:w-[300px] h-[200px]  lg:h-40 flex flex-col
+           rounded-md w-[270px] lg:w-[300px] h-[180px] lg:h-40 flex flex-col
             justify-between p-4 shrink-0"
     >
-      <h3 className="text-white text-[22px] font-medium break-words w-full whitespace-normal overflow-wrap-break-word">
+      <h3 className="text-white text-[18px] lg:text-[22px] font-medium break-words w-full whitespace-normal overflow-wrap-break-word">
         {title}
       </h3>
       <button
-        className="self-start inline-block text-center border border-gray-500 text-gray-200 
-              rounded-md px-4 py-3 text-sm hover:bg-gray-700 transition"
+        className="self-start inline-block text-center border
+         border-gray-500 text-gray-200 rounded-md lg:px-4 px-3 py-2 lg:py-3 
+         text-sm hover:bg-gray-700 transition"
       >
         {tag}
       </button>
@@ -50,7 +51,7 @@ export const CatCards = ({
 
   return (
     <div
-      className="py-[42px] lg:py-[64px] px-8 lg:px-[64px]  relative"
+      className="py-[28px] lg:py-[64px] px-8 lg:px-[64px]  relative"
       style={{ backgroundColor }}
     >
       <div className="flex gap-2 items-end">
@@ -62,9 +63,11 @@ export const CatCards = ({
             height={icon.height}
           />
         )}
-        <h2 className="text-white text-2xl font-medium">{categoryTitle}</h2>
+        <h2 className="text-white lg:text-2xl text-[20px] font-medium">
+          {categoryTitle}
+        </h2>
       </div>
-      <div className="border-t border-white mb-10 mt-3"></div>
+      <div className="border-t border-white mb-6 lg:mb-10 mt-2 lg:mt-3"></div>
 
       {/* Left Arrow Button */}
       {scrollPosition > 0 && (
