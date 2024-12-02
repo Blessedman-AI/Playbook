@@ -88,7 +88,7 @@ const Navbar = () => {
   return (
     <nav
       className="w-full bg-gradient-to-br from-gradientFrom
-     to-gradientTo gradient  text-white py-8 lg:py-[4.5rem]
+     to-gradientTo gradient  text-white pt-16 pb-10  lg:py-[72px]
       px-6 lg:px-[64px]"
     >
       <div
@@ -97,15 +97,15 @@ const Navbar = () => {
       >
         {/* Logo section */}
         <div
-          className="w-[140px] h-[140px]  lg:w-[30%] flex items-center 
+          className="lg:w-[30%] flex items-center 
           space-x-4 mb-4 lg:mb-0"
         >
-          <div>
+          <div className="w-[140px] h-[23px] items-center ">
             <Image
               src="/images/athena-logo.svg"
               alt="Athena"
               width={140}
-              height={140}
+              height={23}
             />
           </div>
           <div className="flex items-center space-x-2">
@@ -127,15 +127,15 @@ const Navbar = () => {
 
         {/* Search bar section */}
         <div
-          className="w-full lg:w-[70%]  mt-4 lg:mt-0
+          className="w-full lg:w-[70%]  my-5 lg:mt-0
          flex items-center justify-center"
         >
           <div className="relative w-[90%]">
             <input
               type="text"
               placeholder="Search playbooks..."
-              className="w-full px-4 py-4 lg:py-[26px] bg-[#000] 
-            rounded-sm outline-none"
+              className="w-full px-4 py-8 text-[14px] lg:py-[26px] bg-[#000] 
+            rounded-md outline-none"
             />
             <button
               className="absolute inset-y-0 right-2 px-4 bg-transparent
