@@ -87,8 +87,9 @@ import Image from 'next/image';
 const Navbar = () => {
   return (
     <nav
-      className="w-full bg-gradient-to-br from-[#1e1e33]
-     to-[#030311] text-white py-8 lg:py-[4.5rem] px-6 lg:px-[64px]"
+      className="w-full bg-gradient-to-br from-gradientFrom
+     to-gradientTo gradient  text-white py-8 lg:py-[4.5rem]
+      px-6 lg:px-[64px]"
     >
       <div
         className="flex flex-col lg:flex-row items-start lg:items-center 
@@ -113,7 +114,10 @@ const Navbar = () => {
               <h1 className="text-2xl">Playbook</h1>
               <div className="flex items-center space-x-2">
                 <h2>Library</h2>
-                <span className="px-2 text-sm font-medium bg-[#9ED0CB] rounded-sm text-gray-700">
+                <span
+                  className="px-2 text-sm font-medium bg-secondary
+                 rounded-sm text-white"
+                >
                   Beta
                 </span>
               </div>
@@ -130,7 +134,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search playbooks..."
-              className="w-full px-4 py-4 lg:py-[26px] bg-[#333343] 
+              className="w-full px-4 py-4 lg:py-[26px] bg-[#000] 
             rounded-sm outline-none"
             />
             <button

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="black" />
+
+  <!-- Pyramid Shape -->
+  <polygon points="150,60 240,240 60,240" fill="none" stroke="white" stroke-width="8" />
+
+  <!-- Horizontal Lines -->
+  <line x1="103" y1="150" x2="195" y2="150" stroke="white" stroke-width="8" />
+  <line x1="85" y1="195" x2="220" y2="195" stroke="white" stroke-width="8" />
+</svg>

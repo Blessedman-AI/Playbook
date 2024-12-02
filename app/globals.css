@@ -27,13 +27,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 html,
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: var(--font-lexend);
+  font-family: var(--font-roboto);
+  font-size: 62.5%;
 }
 
 h1,
@@ -46,38 +48,117 @@ p {
   font-family: var(--font-roboto); /* Roboto for paragraphs */
 }
 
-/* Hide horizontal scrollbar */
+h1 {
+  font-size: 26px;
+  color: #fff;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  color: #fff;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #fff;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+h4 {
+  font-size: 20px;
+  color: #fff;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+h5 {
+  font-size: 18px;
+  color: #fff;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* General Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 2px; /* For vertical scrollbars */
+  height: 4px; /* For horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #44444d; /* Thumb (draggable handle) colour */
+  border-radius: 4px; /* Rounded corners for thumb */
+}
+
+/* Hover Effect for Thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555; /* Darker colour on hover */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin; /* Reduces scrollbar width */
+  scrollbar-color: #44444d #000; /* Thumb and track colours */
+}
+
+/* To completely hide scrollbars */
 .hide-scrollbar {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; /* Chrome, Safari, Opera */
 }
 
-/* Style for the scrollbar track (background of scrollbar) */
-::-webkit-scrollbar {
-  height: 8px; /* Height of the horizontal scrollbar */
-  background: #000; /* Match your site's dark theme */
-}
-
-/* Style for the scrollbar thumb (the draggable handle) */
-::-webkit-scrollbar-thumb {
-  background: #44444d; /* Themed colour for the scrollbar */
-  border-radius: 4px; /* Rounded edges for smooth look */
-  border: 2px solid #44444d; /* Padding-like effect matching the track */
-}
-
-/* Style for scrollbar on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #44444d; /* Slightly darker or lighter variant for hover */
-}
-
-/* Remove scrollbar buttons */
-::-webkit-scrollbar-button {
-  /* display: none; */
-  width: 0;
-  height: 0;
-  background: transparent; /* Hide buttons, optional */
+@media (pointer: coarse) {
+  /* Targets touchscreens */
+  .hide-scrollbar {
+    overflow: -moz-scrollbars-none; /* Firefox older versions */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Modern Firefox */
+  }
 }

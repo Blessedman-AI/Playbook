@@ -1,5 +1,6 @@
-import Navbar from '@/components/homepage/Navbar';
-import './globals.css';
+import Sidebar from '@/components/SidebarComponent';
+import '../../globals.css';
+// import 'antd/timeline/style/css';
 import { Lexend, Roboto } from 'next/font/google';
 
 // Define font configurations for Google fonts
@@ -16,20 +17,14 @@ const roboto = Roboto({
   weight: ['400', '500', '700'],
 });
 
-export const metadata = {
-  title: 'Playbook Library',
-};
-
-export default function RootLayout({ children }) {
+export default function DetailsLayout({ children }) {
+  // return <>{children}</>;
   return (
     <html
       lang="en"
       className={`${lexend.variable} ${roboto.variable}  antialiased`}
     >
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

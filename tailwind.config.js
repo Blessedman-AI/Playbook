@@ -10,6 +10,15 @@ module.exports = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        primary: '#3f4860',
+        secondary: '#dd690d',
+        gray1: '#44444d',
+        // borderColor: '#9ED0CB',
+        borderColor: '#dd690d',
+        buttonGradientFrom: '#3f4860',
+        buttonGradientTo: '#b30000',
+        gradientFrom: '#3f4860',
+        gradientTo: '#1f2838',
       },
       fontFamily: {
         ' gt-planar': ['GT-Planar', 'Lexend', 'Roboto'],
@@ -31,5 +40,37 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.primaryButton': {
+          alignSelf: 'flex-start',
+          // display: 'inline-block',
+          display: 'flex',
+          textAlign: 'center',
+          fontSize: '14px',
+          letterSpacing: '1px',
+          lineHeight: '20px ',
+          borderWidth: '1px',
+          borderColor: '#6b7280',
+          color: '#e5e7eb',
+          borderRadius: '6px',
+        },
+
+        '.primaryButton:hover': {
+          backgroundColor: '#374151',
+        },
+
+        '.customText': {
+          fontSize: '14px',
+          letterSpacing: '1px',
+          overflowWrap: 'break-word',
+          whiteSpace: 'normal',
+          color: '#fff,',
+        },
+      };
+
+      addUtilities(newUtilities);
+    },
+  ],
 };
