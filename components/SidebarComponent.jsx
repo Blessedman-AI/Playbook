@@ -54,7 +54,7 @@ const Sidebar = ({
                 src="/images/athena-logo.svg"
                 alt="Athena"
                 width={140}
-                height={100}
+                height={101}
               />
             </div>
 
