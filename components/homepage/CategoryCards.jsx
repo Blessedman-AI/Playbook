@@ -15,7 +15,7 @@ export const Card = ({ title, details, authors, tag }) => {
          px-4 py-8 shrink-0"
       >
         <h3
-          className="text-white text-[18px] lg:text-[22px]
+          className=" 
        font-medium break-words w-full whitespace-normal
         overflow-wrap-break-word mb-6 lg:mb-0"
         >

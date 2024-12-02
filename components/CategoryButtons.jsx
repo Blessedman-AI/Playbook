@@ -5,13 +5,13 @@ const Card = ({ category, tags }) => {
   return (
     <a
       href="#"
-      className="flex flex-col gap-2 items-start lg:items-center justify-center
+      className="flex flex-col  items-start lg:items-center justify-center
        bg-gradient-to-br from-gradientFrom to-gradientTo
       rounded-lg p-6 hover:border-borderColor hover:text-borderColor
       transition-all duration-300 border border-transparent
       min-w-[260px] h-[100px]"
     >
-      <h3 className="text-xl font-bold text-center">{category}</h3>
+      <h3 className="text-[18px] font-normal text-center">{category}</h3>
       <p className="text-[12px] text-gray-400 text-center">{tags}</p>
     </a>
   );
@@ -29,13 +29,15 @@ const CatLinks = () => {
       >
         <a
           href="#"
-          className="flex flex-row items-center  bg-gradient-to-br
+          className="flex flex-row items-center justify-center  bg-gradient-to-br
            from-gradientFrom to-gradientTo
           rounded-lg p-6 hover:border-borderColor hover:text-borderColor
           transition-all duration-300 border border-transparent
            min-w-[260px] h-[100px]"
         >
-          <h3 className="text-xl font-bold text-center">All Playbooks</h3>
+          <h3 className=" text-[18px] font-normal text-center">
+            All Playbooks
+          </h3>
         </a>
         {CategoryLinks.map((card, index) => (
           <Card key={index} category={card.category} tags={card.tags} />
