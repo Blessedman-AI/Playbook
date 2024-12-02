@@ -97,7 +97,7 @@ const Navbar = () => {
       >
         {/* Logo section */}
         <div
-          className="w-full lg:w-[30%] flex items-center 
+          className="w-[140px] h-[140px]  lg:w-[30%] flex items-center 
           space-x-4 mb-4 lg:mb-0"
         >
           <div>

@@ -38,7 +38,7 @@ const Sidebar = ({
 
   return (
     <div
-      className="hide-scrollbar flex flex-col py-16 px-8 gap-8 lg:gap-10
+      className="hide-scrollbar flex flex-col  px-8 gap-8  lg:gap-10
        bg-primary lg:w-[420px] w-full shadow-md lg:overflow-y-scroll
         flex-shrink-0 lg:fixed lg:top-0 lg:left-0 lg:h-screen min-h-full"
     >
@@ -48,13 +48,15 @@ const Sidebar = ({
          justify-center space-x-4 mb-4 lg:mb-0"
       >
         <Link href="/">
-          <div className="flex">
-            <Image
-              src="/images/athena-logo.svg"
-              alt="Athena"
-              width={140}
-              height={140}
-            />
+          <div className="flex ">
+            <div className="flex items-center justify-center w-[140px] h-[100px]">
+              <Image
+                src="/images/athena-logo.svg"
+                alt="Athena"
+                width={140}
+                height={100}
+              />
+            </div>
 
             <div className="flex items-center space-x-2">
               <div className="w-[2px] h-[50px] mx-3 bg-white"></div>

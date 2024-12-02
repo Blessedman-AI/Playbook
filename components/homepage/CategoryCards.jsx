@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const Card = ({ title, details, authors, tag }) => {
   return (
-    <Link href="/details" className="block">
+    <Link href="/content" className="block">
       <div
         className=" cursor-pointer bg-gradient-to-br from-gradientFrom
        to-gradientTo rounded-md w-[270px] lg:w-[400px]
